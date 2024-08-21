@@ -1,2 +1,5 @@
 accessWidener v1 named
 accessible class net/minecraft/world/level/block/entity/BlockEntityType$BlockEntitySupplier
+accessible field net/minecraft/client/gui/components/EditBox value Ljava/lang/String;
+accessible method net/minecraft/client/gui/components/AbstractSliderButton getTextureY ()I
+accessible method net/minecraft/client/gui/components/AbstractSliderButton getHandleTextureY ()I

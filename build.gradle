@@ -1,14 +1,3 @@
-plugins {
-    id 'com.matyrobbrt.mc.registrationutils' version "$regutils_version" // The plugin is located at the Gradle plugin portal
-}
-registrationUtils {
-    group "com.nyfaria.${mod_id}.registration"
-    projects {
-        Fabric { type 'fabric' } // The fabric project
-        Forge { type 'forge' } // The forge project
-        Common { type 'common' } // The common project
-    }
-}
 subprojects {
     
     apply plugin: 'java'

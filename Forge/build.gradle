@@ -141,7 +141,6 @@ publishing {
         }
     }
 }
-reg.configureJarTask(tasks.jarJar)
 publishMods {
     if(publishForge) {
         file = jar.archiveFile
