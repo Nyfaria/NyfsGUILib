@@ -3,6 +3,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '5.1.+'
     id 'org.parchmentmc.librarian.forgegradle' version '1.+'
     id 'maven-publish'
+    id 'dev._100media.gradleutils' version '1.+'
 }
 
 archivesBaseName = "${mod_id}-common-${minecraft_version}"
@@ -53,10 +54,7 @@ publishing {
             from components.java
         }
     }
-
     repositories {
-        maven {
-            url "file://" + System.getenv("local_maven")
-        }
+        maven hundredMedia.getPublishing100MediaMaven()
     }
 }
